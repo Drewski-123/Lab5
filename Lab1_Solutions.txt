@@ -41,7 +41,8 @@ part 2:
 34. sort password_demo.txt
 35. sort -n password_demo.txt
 36. sort -t: -k 3,4 -g /etc/passwd
-37. sort -t: -k 3 -g /etc/group
+37. sort -t: -k 3 -g /etc/grp
+
 38. grep daemon password_demo.txt
 39. wc -l password_demo.txt
 40. uniq -u /etc/group
