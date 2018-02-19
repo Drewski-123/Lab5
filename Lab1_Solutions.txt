@@ -1,0 +1,51 @@
+Drew Gitlin
+Jansen Wenberg
+
+1. cd Desktop
+2. mkdir cs3308
+3. mv cs3308 CSCI3308
+4. cd CSCI3308
+5. ls -a
+6. cd pictures
+7. ls -1 --sort=size
+8. cd ..
+9. mkdir bigData
+10. cp /home/user/Desktop/CSCI3308/pictures/Eyjafjallajokull_volcano_plume_2010_04_17.jpg /home/user/Desktop/CSCI3308/bigData/
+11. cd texts
+12. ls -1 --sort=size
+13. cd ..
+14. cp /home/user/Desktop/CSCI3308/texts/dracula.txt /home/user/Desktop/CSCI3308/bigData/
+15. du -sk bigData
+16. zip -r bigData.zip bigData
+17. du -sk bigData.zip
+18. tar -cvf bigData.tar bigData
+19. du -sk bigData.tar
+20. rm -rf bigData
+21. rm -rf bigData.zip
+22. tar -xvf bigData.tar
+23. mkdir little1
+24. mkdir little2
+25. unzip little1.zip -d little1
+26. unzip little2.zip -d little2
+27. find -name target.txt   (./mystery/32/target.txt/)
+28. cd texts
+29. head -n 5 dubliners.txt
+30. tail -n -5 heartofdarkness.txt
+
+31. cp /etc/passwd /home/user/Desktop/CSCI3308
+32. cd ..
+33. mv passwrd password_demo.txt
+
+part 2:
+
+34. sort password_demo.txt
+35. sort -n password_demo.txt
+36. sort -t: -k 3,4 -g /etc/passwd
+37. sort -t: -k 3 -g /etc/group
+38. grep daemon password_demo.txt
+39. wc -l password_demo.txt
+40. uniq -u /etc/group
+41. uniq -u /etc/group > tmp
+42. wc -l password_demo.txt > getUniqueGID.sh
+43. chmod +x getUniqueGID.sh
+44. chmod 666 getUniqueGID.sh
