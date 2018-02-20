@@ -1,0 +1,31 @@
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+user@cu-cs-vm:~/Desktop/CSCI3308/Lab5-master/Lab5$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 3 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+	both modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+user@cu-cs-vm:~/Desktop/CSCI3308/Lab5-master/Lab5$ git add .
+user@cu-cs-vm:~/Desktop/CSCI3308/Lab5-master/Lab5$ git commit -m "fixed merge"
+[master cf64e7e] fixed merge
+user@cu-cs-vm:~/Desktop/CSCI3308/Lab5-master/Lab5$ git push origin master
+Username for 'https://github.com': Drewski-123
+Password for 'https://Drewski-123@github.com': 
+Counting objects: 12, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 1.10 KiB | 0 bytes/s, done.
+Total 12 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), completed with 1 local object.
+To https://github.com/Drewski-123/Lab5.git
+   e9d38b9..cf64e7e  master -> master
+user@cu-cs-vm:~/Desktop/CSCI3308/Lab5-master/Lab5$ 
